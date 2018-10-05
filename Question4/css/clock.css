@@ -1,0 +1,43 @@
+.clock_num{
+  font-size: 30px;
+}
+
+.second_hand
+{
+  height: 190px;
+  width: 10px;
+  border-radius: 10px;
+  line-height: 45px;
+  color: white;
+  position: absolute;
+  background: black;
+  left: 500px;
+  top: 110px;
+  transform-origin: bottom;
+}
+
+.minute_hand
+{
+  height: 160px;
+  width: 10px;
+  border-radius: 10px;
+  line-height: 45px;
+  position: absolute;
+  background: blue;
+  left: 500px;
+  top: 140px;
+  transform-origin: bottom;
+}
+
+.hour_hand
+{
+  height: 130px;
+  width: 10px;
+  border-radius: 10px;
+  line-height: 45px;
+  position: absolute;
+  background: red;
+  left: 500px;
+  top: 170px;
+  transform-origin: bottom;
+}

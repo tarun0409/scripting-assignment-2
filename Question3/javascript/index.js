@@ -11,9 +11,6 @@ var houses = {};
 
 $(document).ready(function(){
 
-  var prev_count = 1;
-  var curr_chars = [];
-  var curr_houses = [];
   //houses
   for(var page=1; page<=MAX_HOUSE_PAGE; page++)
   {
@@ -28,7 +25,7 @@ $(document).ready(function(){
           name = name.toLowerCase();
           var h_url = house["url"];
           houses[name] = h_url;
-          //console.log(name+"-->"+h_url);
+          total_houses++;
         }
       }
     });
@@ -62,6 +59,7 @@ $(document).ready(function(){
             characters[name] = c_url;
             //console.log(name+"-->"+c_url);
           }
+          total_characters++;
         }
       }
     });
@@ -89,7 +87,6 @@ $(document).ready(function(){
         $("#info_words").append(words);
       }
     });
-    //alert(house_url);
 
   });
 
