@@ -27,6 +27,20 @@
         <div class="col-sm-4">
           <input type="radio" name="search_radio" class="radio" value="search_character"><label class="old_font text">Search Characters</label>
         </div>
+        <div class="col-sm-4">
+          <input type="radio" name="search_radio" class="radio" value="search_rand_character"><label class="old_font text">Character from House</label>
+        </div>
+      </div>
+      <div class="row mt-lg-3">
+        <div class="col-sm-4">
+          <button type="button" name="button" id="rand_house" class="old_font dark_button">Random House</button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" name="button" id="rand_char" class="old_font dark_button">Random Character</button>
+        </div>
+        <!-- <div class="col-sm-4">
+          <button type="button" name="button" id="rand_char_house" class="old_font dark_button">Character from House</button>
+        </div> -->
       </div>
       <div class="row mt-lg-3">
         <div class="search_div" id="house_div">
@@ -51,12 +65,23 @@
             <button type="button" name="button" id="search_char" class="old_font dark_button">Search</button>
           </div>
         </div>
+        <div class="search_div" id="house_char_div">
+          <div class="row mt-lg-3">
+            <p class="old_font text">Enter a house name : </p>
+          </div>
+          <div class="row mt-lg-3">
+            <input type="text" id="house_char_name" placeholder="House Lannister" class="old_font input_text">
+          </div>
+          <div class="row mt-lg-3">
+            <button type="button" name="button" id="search_house_char" class="old_font dark_button">Get Random Character</button>
+          </div>
+        </div>
       </div>
       <div class="row mt-lg-3">
         <div id="search_urls">
 
         </div>
-        <div>
+        <div id="got_house_display">
           <div class="row mt-lg-3 house_display" id="house_string_div">
             <label class="old_font text">Name: </label> <label id="house_string" class="lm normal"> </label>
           </div>
@@ -100,7 +125,7 @@
             <label class="old_font text">Sworn Members: </label> <label id="house_sworn" class="lm normal"> </label>
           </div>
         </div>
-        <div>
+        <div id="got_char_display">
           <div class="row mt-lg-3 char_display" id="char_string_div">
             <label class="old_font text">Name: </label> <label id="char_string" class="lm normal"> </label>
           </div>
