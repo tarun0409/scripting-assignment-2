@@ -48,3 +48,22 @@
   margin-left: 10px;
   margin-top: 10px;
 }
+
+#search_urls
+{
+  color: white;
+  font-size: 20px;
+  font-family: Open Sans;
+}
+
+.search_result_button
+{
+  border: none;
+  background: Transparent;
+  color: white;
+}
+
+.search_result_button:hover
+{
+  text-decoration: underline;
+}

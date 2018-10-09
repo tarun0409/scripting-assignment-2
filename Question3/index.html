@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8"></meta>
+    <meta charset="utf-8">
     <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -45,56 +45,88 @@
             <p class="old_font text">Search for Characters : </p>
           </div>
           <div class="row mt-lg-3">
-            <input type="text" name="" placeholder="Tyrion Lannister" class="old_font input_text">
+            <input type="text" id="char_name" placeholder="Tyrion Lannister" class="old_font input_text">
           </div>
           <div class="row mt-lg-3">
-            <button type="button" name="button" class="old_font dark_button">Search</button>
+            <button type="button" name="button" id="search_char" class="old_font dark_button">Search</button>
           </div>
         </div>
       </div>
       <div class="row mt-lg-3">
-        <div class="house_display">
-          <div class="row mt-lg-3">
+        <div id="search_urls">
+
+        </div>
+        <div>
+          <div class="row mt-lg-3 house_display" id="house_string_div">
             <label class="old_font text">Name: </label> <label id="house_string" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_region_div">
             <label class="old_font text">Region: </label> <label id="house_region" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_sigil_div">
             <label class="old_font text">Sigil: </label> <label id="house_sigil" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_words_div">
             <label class="old_font text">Words: </label> <label id="house_words" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_titles_div">
             <label class="old_font text">Titles: </label> <label id="house_titles" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_seats_div">
             <label class="old_font text">Seat: </label> <label id="house_seats" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_lord_div">
             <label class="old_font text">Current Lord: </label> <label id="house_lord" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_heir_div">
             <label class="old_font text">Heir: </label> <label id="house_heir" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_overlord_div">
             <label class="old_font text">Overlord: </label> <label id="house_overlord" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_founded_div">
             <label class="old_font text">Founded: </label> <label id="house_founded" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_founder_div">
             <label class="old_font text">Founder: </label> <label id="house_founder" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_weapon_div">
             <label class="old_font text">Ancestral Weapon: </label> <label id="house_weapon" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_cadet_div">
             <label class="old_font text">Cadet Branches: </label> <label id="house_cadet" class="lm normal"> </label>
           </div>
-          <div class="row mt-lg-3">
+          <div class="row mt-lg-3 house_display" id="house_sworn_div">
             <label class="old_font text">Sworn Members: </label> <label id="house_sworn" class="lm normal"> </label>
+          </div>
+        </div>
+        <div>
+          <div class="row mt-lg-3 char_display" id="char_string_div">
+            <label class="old_font text">Name: </label> <label id="char_string" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_gender_div">
+            <label class="old_font text">Gender: </label> <label id="char_gender" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_culture_div">
+            <label class="old_font text">Culture: </label> <label id="char_culture" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_born_div">
+            <label class="old_font text">Born: </label> <label id="char_born" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_died_div">
+            <label class="old_font text">Died: </label> <label id="char_died" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_titles_div">
+            <label class="old_font text">Titles: </label> <label id="char_titles" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_aliases_div">
+            <label class="old_font text">Aliases: </label> <label id="char_aliases" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_allegiances_div">
+            <label class="old_font text">Allegiances: </label> <label id="char_allegiances" class="lm normal"> </label>
+          </div>
+          <div class="row mt-lg-3 char_display" id="char_actor_div">
+            <label class="old_font text">Played By: </label> <label id="char_actor" class="lm normal"> </label>
           </div>
         </div>
       </div>
